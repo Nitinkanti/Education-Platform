@@ -1,0 +1,162 @@
+/* Main Dropdown Container */
+#customdrop1 {
+  position: absolute;
+  top: 100%;
+  left: 94%;
+  transform: translateX(-50%);
+  width: 99vw;
+  max-width: 1600px;
+  background: white;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+  border: 1px solid #e5e7eb;
+  border-radius: 0 0 16px 16px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 50;
+}
+
+/* Hover effect */
+.group:hover #customdrop1 {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Inner Content */
+#inner1 {
+  display: flex;
+  min-height: 400px;
+}
+
+/* Domain Section - Left with Gray Background */
+#inner1 > div:first-child {
+  width: 33.33%;
+  background: #f9fafb;
+  padding: 32px;
+  border-right: 1px solid #e5e7eb;
+}
+
+#inner1 > div:first-child h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 24px;
+}
+
+/* Domain Items */
+#inner1 > div:first-child ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#inner1 > div:first-child li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#inner1 > div:first-child li:hover {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#inner1 > div:first-child li span:first-child {
+  color: #374151;
+  font-weight: 500;
+}
+
+#inner1 > div:first-child li span:last-child {
+  color: #9ca3af;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Right Sections */
+#inner1 > div:last-child {
+  width: 66.67%;
+  display: flex;
+}
+
+/* Certification and Bootcamp Sections */
+#inner1 > div:last-child > div {
+  flex: 1;
+  padding: 32px;
+  border-right: 1px solid #e5e7eb;
+}
+
+#inner1 > div:last-child > div:last-child {
+  border-right: none;
+}
+
+#inner1 > div:last-child h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 24px;
+}
+
+#inner1 > div:last-child ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#inner1 > div:last-child li {
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #374151;
+  font-weight: 500;
+}
+
+#inner1 > div:last-child li:hover {
+  background: #f3f4f6;
+}
+
+/* Bottom CTA */
+#customdrop1 > div:last-child {
+  border-top: 1px solid #e5e7eb;
+  background: white;
+  padding: 24px 32px;
+}
+
+#customdrop1 > div:last-child > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#customdrop1 > div:last-child h4 {
+  color: #003366;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+}
+
+#customdrop1 > div:last-child p {
+  color: #6b7280;
+  margin: 4px 0 0 0;
+}
+
+#customdrop1 > div:last-child button {
+  background: #003366;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#customdrop1 > div:last-child button:hover {
+  background: #002244;
+}
